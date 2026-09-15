@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { INSTAGRAM_URL, FACEBOOK_URL, WHATSAPP_DISPLAY, buildWhatsAppLink } from "../data/site";
+import { INSTAGRAM_URL, FACEBOOK_URL } from "../data/site";
 import logo from "../assets/brand/logo-full.png";
 import { IconInstagram, IconFacebook } from "./SocialIcons";
 import "./Footer.css";
@@ -16,17 +16,6 @@ export default function Footer() {
             Regalos y detalles personalizados para bodas, bautizos, comuniones y eventos, hechos
             con cariño y cuidado en cada paso.
           </p>
-          <a href={buildWhatsAppLink()} target="_blank" rel="noopener noreferrer" className="footer-whatsapp">
-            WhatsApp: {WHATSAPP_DISPLAY}
-          </a>
-          <div className="footer-social-row">
-            <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-              <IconInstagram />
-            </a>
-            <a href={FACEBOOK_URL} target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-              <IconFacebook />
-            </a>
-          </div>
         </div>
 
         <div>
@@ -50,18 +39,26 @@ export default function Footer() {
         </div>
 
         <div>
-          <h4>Legal</h4>
-          <ul>
-            <li><Link to="/aviso-legal">Aviso legal</Link></li>
-            <li><Link to="/privacidad">Privacidad</Link></li>
-            <li><Link to="/cookies">Cookies</Link></li>
-          </ul>
+          <h4>Síguenos</h4>
+          <div className="social-row">
+            <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <IconInstagram /> Instagram
+            </a>
+            <a href={FACEBOOK_URL} target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <IconFacebook /> Facebook
+            </a>
+          </div>
         </div>
       </div>
 
       <div className="footer-bottom">
-        <div className="container">
-          © {year} Globos Rosas — Regalos y Más. Todos los derechos reservados.
+        <div className="container footer-bottom-inner">
+          <span>© {year} Globos Rosas — Regalos y Más. Todos los derechos reservados.</span>
+          <div className="footer-legal-links">
+            <Link to="/aviso-legal">Aviso legal</Link>
+            <Link to="/privacidad">Privacidad</Link>
+            <Link to="/cookies">Cookies</Link>
+          </div>
         </div>
       </div>
     </footer>

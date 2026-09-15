@@ -21,24 +21,11 @@
   text-align: center;
 }
 
-.contact-phone {
-  display: block;
-  margin-top: 20px;
-  font-size: 0.95rem;
-  font-weight: 600;
-  letter-spacing: 0.02em;
-  color: var(--ink);
-}
-
-.contact-phone:hover {
-  color: var(--pink-strong-dark);
-}
-
 .contact-social-links {
   display: flex;
   justify-content: center;
   gap: 22px;
-  margin-top: 32px;
+  margin-top: 28px;
   color: var(--ink-soft);
 }
 

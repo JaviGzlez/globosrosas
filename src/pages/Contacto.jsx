@@ -1,4 +1,4 @@
-import { INSTAGRAM_URL, FACEBOOK_URL, WHATSAPP_DISPLAY } from "../data/site";
+import { INSTAGRAM_URL, FACEBOOK_URL } from "../data/site";
 import WhatsAppCTA from "../components/WhatsAppCTA";
 import { IconInstagram, IconFacebook } from "../components/SocialIcons";
 import "./Contacto.css";
@@ -15,10 +15,6 @@ export default function Contacto() {
         </p>
 
         <WhatsAppCTA label="Escribir por WhatsApp" />
-
-        <a className="contact-phone" href={`tel:+${"34" + WHATSAPP_DISPLAY.replace(/\s/g, "")}`}>
-          {WHATSAPP_DISPLAY}
-        </a>
 
         <div className="contact-social-links">
           <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer">
