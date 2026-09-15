@@ -1,0 +1,26 @@
+.placeholder-photo {
+  aspect-ratio: 1 / 1;
+  border-radius: var(--radius-md);
+  background: repeating-linear-gradient(
+    135deg,
+    var(--cream-soft),
+    var(--cream-soft) 12px,
+    var(--cream-deep) 12px,
+    var(--cream-deep) 24px
+  );
+  border: 1.5px dashed var(--pink);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: var(--ink-soft);
+  font-size: 0.78rem;
+  text-align: center;
+  padding: 12px;
+}
+
+.placeholder-icon {
+  font-size: 1.6rem;
+  opacity: 0.7;
+}
