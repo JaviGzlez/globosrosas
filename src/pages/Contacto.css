@@ -58,6 +58,12 @@
   font-weight: 600;
 }
 
+.contact-social-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
 .contact-social-links a:hover {
   color: var(--pink-strong-dark);
 }

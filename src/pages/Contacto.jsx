@@ -1,5 +1,6 @@
 import { INSTAGRAM_URL, FACEBOOK_URL, WHATSAPP_DISPLAY } from "../data/site";
 import WhatsAppCTA from "../components/WhatsAppCTA";
+import { IconInstagram, IconFacebook } from "../components/SocialIcons";
 import "./Contacto.css";
 
 export default function Contacto() {
@@ -25,10 +26,10 @@ export default function Contacto() {
           <span>También puedes encontrarnos en:</span>
           <div className="contact-social-links">
             <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer">
-              Instagram
+              <IconInstagram /> Instagram
             </a>
             <a href={FACEBOOK_URL} target="_blank" rel="noopener noreferrer">
-              Facebook
+              <IconFacebook /> Facebook
             </a>
           </div>
         </div>

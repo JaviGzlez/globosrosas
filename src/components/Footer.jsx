@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import { INSTAGRAM_URL, FACEBOOK_URL, WHATSAPP_DISPLAY, buildWhatsAppLink } from "../data/site";
+import logo from "../assets/brand/logo-full.png";
+import { IconInstagram, IconFacebook } from "./SocialIcons";
 import "./Footer.css";
 
 export default function Footer() {
@@ -9,7 +11,7 @@ export default function Footer() {
     <footer className="site-footer">
       <div className="container footer-grid">
         <div>
-          <div className="footer-logo">🎀 Globos Rosas</div>
+          <img src={logo} alt="Globos Rosas — Imagina y Vuela" className="footer-logo-img" />
           <p>
             Regalos y detalles personalizados para bodas, bautizos, comuniones y eventos, hechos
             con cariño y cuidado en cada paso.
@@ -43,10 +45,10 @@ export default function Footer() {
           <h4>Síguenos</h4>
           <div className="social-row">
             <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-              Instagram
+              <IconInstagram /> Instagram
             </a>
             <a href={FACEBOOK_URL} target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-              Facebook
+              <IconFacebook /> Facebook
             </a>
           </div>
         </div>

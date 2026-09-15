@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import logo from "../assets/brand/logo-wordmark.png";
 import "./Header.css";
 
 const LINKS = [
@@ -20,11 +21,7 @@ export default function Header() {
     <header className="site-header">
       <div className="container site-header-inner">
         <NavLink to="/" className="logo" onClick={() => setOpen(false)}>
-          <span className="logo-mark">🎀</span>
-          <span className="logo-text">
-            Globos Rosas
-            <small>Regalos y Más</small>
-          </span>
+          <img src={logo} alt="Globos Rosas — Imagina y Vuela" className="logo-img" />
         </NavLink>
 
         <nav className={`main-nav ${open ? "is-open" : ""}`}>
