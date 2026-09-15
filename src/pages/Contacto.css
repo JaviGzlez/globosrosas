@@ -1,67 +1,49 @@
 .contact-section {
-  background: radial-gradient(circle at 20% 15%, var(--pink-soft) 0%, transparent 45%),
-    radial-gradient(circle at 80% 85%, var(--mint-soft) 0%, transparent 45%);
+  padding: 100px 0 120px;
 }
 
 .contact-inner {
-  max-width: 560px;
+  max-width: 480px;
   margin: 0 auto;
   text-align: center;
-}
-
-.contact-inner h1 {
-  font-size: clamp(1.9rem, 4vw, 2.4rem);
-  margin-bottom: 6px;
-}
-
-.contact-text {
-  margin: 6px auto 36px;
-  text-align: center;
-}
-
-.contact-card {
-  background: #fff;
-  border-radius: var(--radius-lg);
-  padding: 40px 32px;
-  box-shadow: var(--shadow-soft);
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 8px;
 }
 
-.contact-card-icon {
-  font-size: 2.2rem;
-  margin-bottom: 6px;
+.contact-inner h1 {
+  font-size: clamp(1.9rem, 4vw, 2.3rem);
+  margin: 12px 0 18px;
 }
 
-.contact-card h3 {
-  font-size: 1.4rem;
+.contact-text {
+  margin: 0 0 36px;
+  text-align: center;
 }
 
-.contact-card p {
-  margin-bottom: 18px;
-  font-size: 0.88rem;
+.contact-phone {
+  display: block;
+  margin-top: 20px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--ink);
 }
 
-.contact-social {
-  margin-top: 32px;
-  font-size: 0.88rem;
-  color: var(--ink-soft);
+.contact-phone:hover {
+  color: var(--pink-strong-dark);
 }
 
 .contact-social-links {
   display: flex;
   justify-content: center;
-  gap: 20px;
-  margin-top: 10px;
-  font-weight: 600;
+  gap: 22px;
+  margin-top: 32px;
+  color: var(--ink-soft);
 }
 
 .contact-social-links a {
   display: inline-flex;
-  align-items: center;
-  gap: 6px;
 }
 
 .contact-social-links a:hover {

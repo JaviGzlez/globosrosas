@@ -54,20 +54,18 @@
   color: var(--pink-strong-dark);
 }
 
-.social-row {
+.footer-social-row {
   display: flex;
-  flex-direction: column;
-  gap: 10px;
-  font-size: 0.85rem;
+  gap: 16px;
+  margin-top: 16px;
+  color: var(--ink-soft);
 }
 
-.social-row a {
+.footer-social-row a {
   display: inline-flex;
-  align-items: center;
-  gap: 8px;
 }
 
-.social-row a:hover {
+.footer-social-row a:hover {
   color: var(--pink-strong-dark);
 }
 

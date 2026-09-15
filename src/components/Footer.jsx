@@ -19,6 +19,14 @@ export default function Footer() {
           <a href={buildWhatsAppLink()} target="_blank" rel="noopener noreferrer" className="footer-whatsapp">
             WhatsApp: {WHATSAPP_DISPLAY}
           </a>
+          <div className="footer-social-row">
+            <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <IconInstagram />
+            </a>
+            <a href={FACEBOOK_URL} target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <IconFacebook />
+            </a>
+          </div>
         </div>
 
         <div>
@@ -36,21 +44,18 @@ export default function Footer() {
           <h4>Globos Rosas</h4>
           <ul>
             <li><Link to="/galeria">Galería</Link></li>
-            <li><Link to="/sobre-nosotras">Sobre nosotras</Link></li>
+            <li><Link to="/sobre-pilar">Sobre Pilar</Link></li>
             <li><Link to="/contacto">Contacto</Link></li>
           </ul>
         </div>
 
         <div>
-          <h4>Síguenos</h4>
-          <div className="social-row">
-            <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-              <IconInstagram /> Instagram
-            </a>
-            <a href={FACEBOOK_URL} target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-              <IconFacebook /> Facebook
-            </a>
-          </div>
+          <h4>Legal</h4>
+          <ul>
+            <li><Link to="/aviso-legal">Aviso legal</Link></li>
+            <li><Link to="/privacidad">Privacidad</Link></li>
+            <li><Link to="/cookies">Cookies</Link></li>
+          </ul>
         </div>
       </div>
 

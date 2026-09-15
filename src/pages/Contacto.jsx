@@ -8,30 +8,25 @@ export default function Contacto() {
     <section className="section contact-section">
       <div className="container contact-inner">
         <span className="eyebrow">Contacto</span>
-        <div className="divider-heart">♥</div>
         <h1>Hablemos de tu celebración</h1>
         <p className="hero-text contact-text">
           La forma más rápida de contactar con nosotras es WhatsApp. Cuéntanos la ocasión, la
           fecha aproximada y tu idea, y te respondemos con opciones y plazos sin compromiso.
         </p>
 
-        <div className="contact-card">
-          <span className="contact-card-icon">💬</span>
-          <h3>{WHATSAPP_DISPLAY}</h3>
-          <p>Respondemos lo antes posible, normalmente el mismo día.</p>
-          <WhatsAppCTA label="Escribir por WhatsApp" />
-        </div>
+        <WhatsAppCTA label="Escribir por WhatsApp" />
 
-        <div className="contact-social">
-          <span>También puedes encontrarnos en:</span>
-          <div className="contact-social-links">
-            <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer">
-              <IconInstagram /> Instagram
-            </a>
-            <a href={FACEBOOK_URL} target="_blank" rel="noopener noreferrer">
-              <IconFacebook /> Facebook
-            </a>
-          </div>
+        <a className="contact-phone" href={`tel:+${"34" + WHATSAPP_DISPLAY.replace(/\s/g, "")}`}>
+          {WHATSAPP_DISPLAY}
+        </a>
+
+        <div className="contact-social-links">
+          <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer">
+            <IconInstagram />
+          </a>
+          <a href={FACEBOOK_URL} target="_blank" rel="noopener noreferrer">
+            <IconFacebook />
+          </a>
         </div>
       </div>
     </section>
