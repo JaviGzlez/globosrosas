@@ -11,6 +11,8 @@ import Bautizos from "./pages/Bautizos.jsx";
 import Comuniones from "./pages/Comuniones.jsx";
 import Eventos from "./pages/Eventos.jsx";
 import Galeria from "./pages/Galeria.jsx";
+import Blog from "./pages/Blog.jsx";
+import BlogPost from "./pages/BlogPost.jsx";
 import SobrePilar from "./pages/SobrePilar.jsx";
 import Contacto from "./pages/Contacto.jsx";
 import AvisoLegal from "./pages/AvisoLegal.jsx";
@@ -29,6 +31,8 @@ createRoot(document.getElementById("root")).render(
           <Route path="comuniones" element={<Comuniones />} />
           <Route path="eventos" element={<Eventos />} />
           <Route path="galeria" element={<Galeria />} />
+          <Route path="blog" element={<Blog />} />
+          <Route path="blog/:slug" element={<BlogPost />} />
           <Route path="sobre-pilar" element={<SobrePilar />} />
           <Route path="contacto" element={<Contacto />} />
           <Route path="aviso-legal" element={<AvisoLegal />} />

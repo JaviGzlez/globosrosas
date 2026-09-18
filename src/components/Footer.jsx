@@ -14,7 +14,7 @@ export default function Footer() {
           <img src={logo} alt="Globos Rosas — Imagina y Vuela" className="footer-logo-img" />
           <p>
             Regalos y detalles personalizados para bodas, bautizos, comuniones y eventos, hechos
-            con cariño y cuidado en cada paso.
+            con cariño y cuidado en cada paso. Enviamos a toda España.
           </p>
         </div>
 
@@ -33,6 +33,7 @@ export default function Footer() {
           <h4>Globos Rosas</h4>
           <ul>
             <li><Link to="/galeria">Galería</Link></li>
+            <li><Link to="/blog">Blog</Link></li>
             <li><Link to="/sobre-pilar">Sobre Pilar</Link></li>
             <li><Link to="/contacto">Contacto</Link></li>
           </ul>

@@ -56,6 +56,7 @@ export default function Home() {
               </a>
               <WhatsAppCTA label="Escríbenos por WhatsApp" />
             </div>
+            <p className="hero-shipping">📦 Enviamos a toda España</p>
           </div>
           <div className="hero-media">
             <img src={heroImg} alt="Detalle personalizado envuelto con lazo verde menta y flores secas" />
@@ -145,8 +146,8 @@ export default function Home() {
                 </div>
               ))}
             </div>
-            <Link to="/sobre-nosotras" className="btn btn-primary">
-              Conócenos
+            <Link to="/sobre-pilar" className="btn btn-primary">
+              Conoce a Pilar
             </Link>
           </div>
         </div>

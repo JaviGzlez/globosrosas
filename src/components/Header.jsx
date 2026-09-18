@@ -10,6 +10,7 @@ const LINKS = [
   { to: "/comuniones", label: "Comuniones" },
   { to: "/eventos", label: "Eventos" },
   { to: "/galeria", label: "Galería" },
+  { to: "/blog", label: "Blog" },
   { to: "/sobre-pilar", label: "Sobre Pilar" },
   { to: "/contacto", label: "Contacto" },
 ];

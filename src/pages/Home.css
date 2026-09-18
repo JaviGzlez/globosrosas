@@ -29,6 +29,13 @@
   gap: 14px;
 }
 
+.hero-shipping {
+  margin: 18px 0 0;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--mint-strong);
+}
+
 .hero-media img {
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-soft);

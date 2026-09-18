@@ -12,6 +12,7 @@ export default function Contacto() {
         <p className="hero-text contact-text">
           La forma más rápida de contactar con nosotras es WhatsApp. Cuéntanos la ocasión, la
           fecha aproximada y tu idea, y te respondemos con opciones y plazos sin compromiso.
+          Hacemos envíos a toda España, así que no importa desde dónde nos escribas.
         </p>
 
         <WhatsAppCTA label="Escribir por WhatsApp" />

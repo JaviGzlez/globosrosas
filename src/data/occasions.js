@@ -34,11 +34,12 @@ export const OCCASIONS = {
       "Paletas a juego con la decoración de tu boda",
       "Personalización con nombres y fecha del enlace",
       "Muestra disponible antes de confirmar el pedido completo",
+      "Enviamos a toda España",
     ],
     faqs: [
       {
         q: "¿Con cuánta antelación debo encargar los detalles de mi boda?",
-        a: "Recomendamos escribirnos al menos 6-8 semanas antes, sobre todo en temporada alta (primavera y verano), para tener tiempo de diseño, aprobación y producción con calma.",
+        a: "Recomendamos escribirnos al menos 6-8 semanas antes, sobre todo en temporada alta (primavera y verano), para tener tiempo de diseño, aprobación, producción y envío con calma.",
       },
       {
         q: "¿Puedo pedir una muestra antes de encargar la cantidad completa?",
@@ -47,6 +48,10 @@ export const OCCASIONS = {
       {
         q: "¿Hacéis detalles a juego con la decoración de la mesa?",
         a: "Sí, adaptamos colores, cintas y materiales para que combinen con la paleta y el estilo de tu boda.",
+      },
+      {
+        q: "¿Enviáis a toda España?",
+        a: "Sí, preparamos y enviamos tu pedido a cualquier punto de España, esté donde esté tu boda.",
       },
       {
         q: "¿Cómo sé el precio de mi pedido?",
@@ -65,6 +70,7 @@ export const OCCASIONS = {
       "Personalización con nombre, fecha y frase especial",
       "Tonos suaves en rosa, verde menta o neutros",
       "Ideal para invitados, padrinos y madrinas",
+      "Enviamos a toda España",
     ],
     faqs: [
       {
@@ -77,7 +83,11 @@ export const OCCASIONS = {
       },
       {
         q: "¿Cuánto tiempo necesitáis para prepararlo?",
-        a: "Depende de la cantidad y el producto, pero recomendamos escribirnos con al menos 3-4 semanas de margen.",
+        a: "Depende de la cantidad y el producto, pero recomendamos escribirnos con al menos 3-4 semanas de margen, para dar tiempo también al envío.",
+      },
+      {
+        q: "¿Enviáis a toda España?",
+        a: "Sí, hacemos envíos a cualquier punto de España.",
       },
     ],
   },
@@ -92,6 +102,7 @@ export const OCCASIONS = {
       "Diseños diferenciados para niño y para niña",
       "Motivos religiosos y frases personalizadas",
       "Combina varios productos en un mismo pedido",
+      "Enviamos a toda España",
     ],
     faqs: [
       {
@@ -106,6 +117,10 @@ export const OCCASIONS = {
         q: "¿Hacéis recordatorios con motivos religiosos personalizados?",
         a: "Sí, podemos incluir motivos religiosos y frases especiales en el diseño de cada detalle.",
       },
+      {
+        q: "¿Enviáis la comunión a cualquier parte de España?",
+        a: "Sí, preparamos tu pedido y lo enviamos a cualquier punto de España.",
+      },
     ],
   },
   eventos: {
@@ -119,6 +134,7 @@ export const OCCASIONS = {
       "Cumpleaños, baby showers y aniversarios",
       "Regalos corporativos con imagen de empresa",
       "Diseño y packaging totalmente a medida",
+      "Enviamos a toda España",
     ],
     faqs: [
       {
@@ -132,6 +148,10 @@ export const OCCASIONS = {
       {
         q: "¿Puedo pedir algo distinto a lo que veo en la web?",
         a: "Claro, las imágenes son ejemplos de nuestro estilo. Cuéntanos tu idea y buscamos la forma de hacerla realidad.",
+      },
+      {
+        q: "¿Enviáis fuera de mi ciudad?",
+        a: "Sí, hacemos envíos a toda España, así que podemos ayudarte estés donde estés.",
       },
     ],
   },
