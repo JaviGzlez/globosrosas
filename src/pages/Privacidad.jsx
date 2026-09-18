@@ -1,6 +1,5 @@
+import { LEGAL_NAME, LEGAL_NIF, LEGAL_ADDRESS, LEGAL_EMAIL } from "../data/site";
 import "./Legal.css";
-
-const P = ({ children }) => <span className="legal-placeholder">{children}</span>;
 
 export default function Privacidad() {
   return (
@@ -8,14 +7,14 @@ export default function Privacidad() {
       <div className="container legal-inner">
         <span className="eyebrow">Información legal</span>
         <h1>Política de Privacidad</h1>
-        <p className="legal-updated">Última actualización: pendiente de completar</p>
+        <p className="legal-updated">Última actualización: septiembre de 2026</p>
 
         <h2>1. Responsable del tratamiento</h2>
         <p>
           El responsable del tratamiento de los datos personales recogidos a través de este
-          sitio web es <P>[nombre y apellidos / razón social del titular]</P>, con NIF/CIF{" "}
-          <P>[NIF/CIF]</P>, domicilio en <P>[dirección fiscal completa]</P> y correo de contacto{" "}
-          <P>[correo electrónico de contacto]</P>.
+          sitio web es <strong>{LEGAL_NAME}</strong>, con NIF <strong>{LEGAL_NIF}</strong>,
+          domicilio en <strong>{LEGAL_ADDRESS}</strong> y correo de contacto{" "}
+          <a href={`mailto:${LEGAL_EMAIL}`}>{LEGAL_EMAIL}</a>.
         </p>
 
         <h2>2. Finalidad del tratamiento</h2>
@@ -52,10 +51,10 @@ export default function Privacidad() {
           Cualquier usuario tiene derecho a obtener confirmación sobre si en Globos Rosas se
           están tratando datos personales que le conciernan, y a ejercer sus derechos de acceso,
           rectificación, supresión, oposición, limitación del tratamiento y portabilidad de los
-          datos (derechos ARCO+) escribiendo a <P>[correo electrónico de contacto]</P>. Asimismo,
-          el usuario tiene derecho a presentar una reclamación ante la Agencia Española de
-          Protección de Datos (AEPD) si considera que el tratamiento no se ajusta a la normativa
-          vigente.
+          datos (derechos ARCO+) escribiendo a{" "}
+          <a href={`mailto:${LEGAL_EMAIL}`}>{LEGAL_EMAIL}</a>. Asimismo, el usuario tiene derecho
+          a presentar una reclamación ante la Agencia Española de Protección de Datos (AEPD) si
+          considera que el tratamiento no se ajusta a la normativa vigente.
         </p>
 
         <h2>7. Normativa aplicable</h2>
@@ -64,12 +63,6 @@ export default function Privacidad() {
           (RGPD), y por la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos
           Personales y garantía de los derechos digitales (LOPDGDD).
         </p>
-
-        <div className="legal-pending-note">
-          Este texto es una plantilla estándar de privacidad a falta de los datos fiscales
-          definitivos de Globos Rosas. En cuanto se faciliten, se completarán los campos
-          marcados.
-        </div>
       </div>
     </section>
   );

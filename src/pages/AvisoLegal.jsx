@@ -1,7 +1,5 @@
-import { WHATSAPP_DISPLAY } from "../data/site";
+import { WHATSAPP_DISPLAY, LEGAL_NAME, LEGAL_NIF, LEGAL_ADDRESS, LEGAL_EMAIL } from "../data/site";
 import "./Legal.css";
-
-const P = ({ children }) => <span className="legal-placeholder">{children}</span>;
 
 export default function AvisoLegal() {
   return (
@@ -9,17 +7,17 @@ export default function AvisoLegal() {
       <div className="container legal-inner">
         <span className="eyebrow">Información legal</span>
         <h1>Aviso Legal</h1>
-        <p className="legal-updated">Última actualización: pendiente de completar</p>
+        <p className="legal-updated">Última actualización: septiembre de 2026</p>
 
         <h2>1. Datos identificativos del titular</h2>
         <p>
           En cumplimiento del artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la
-          Sociedad de la Información y de Comercio Electrónico (LSSI-CE), se informa de los
+          Sociedad de la Información y de Comercio Electrónico (LSSI-CE), se informan los
           siguientes datos: el titular de este sitio web (en adelante, "Globos Rosas") es{" "}
-          <P>[nombre y apellidos / razón social del titular]</P>, con NIF/CIF{" "}
-          <P>[NIF/CIF]</P>, domicilio en <P>[dirección fiscal completa]</P> y correo de contacto{" "}
-          <P>[correo electrónico de contacto]</P>. Para consultas rápidas puede contactarse por
-          WhatsApp en el {WHATSAPP_DISPLAY}.
+          <strong>{LEGAL_NAME}</strong>, con NIF <strong>{LEGAL_NIF}</strong>, domicilio en{" "}
+          <strong>{LEGAL_ADDRESS}</strong> y correo de contacto{" "}
+          <a href={`mailto:${LEGAL_EMAIL}`}>{LEGAL_EMAIL}</a>. Para consultas rápidas puede
+          contactarse también por WhatsApp en el {WHATSAPP_DISPLAY}.
         </p>
 
         <h2>2. Objeto</h2>
@@ -61,12 +59,6 @@ export default function AvisoLegal() {
           controversia derivada del uso de este sitio web, las partes se someterán a los
           juzgados y tribunales que correspondan conforme a derecho.
         </p>
-
-        <div className="legal-pending-note">
-          Este texto es una plantilla legal estándar a falta de los datos fiscales definitivos
-          de Globos Rosas (NIF, domicilio y correo de contacto). En cuanto se faciliten estos
-          datos, se sustituirán los campos marcados y esta página quedará completa.
-        </div>
       </div>
     </section>
   );
